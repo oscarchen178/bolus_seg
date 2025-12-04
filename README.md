@@ -5,8 +5,6 @@ Detecting oral contrast bolus regions in 512×512 grayscale fluoroscopy frames. 
 ## Quick start
 - Create env: `conda env create -f environment.yml && conda activate bolus` (Python 3.10, PyTorch, scikit-image/learn, OpenCV, etc.).
 - Data layout: place frames under `images/` and matching binary masks under `masks/`; filenames follow `<sequence><frame_idx>_*.png` (sequence = 6 alphanum chars).
-- Optional diff data (for `diff_unetpp.ipynb`): `python data_explore/build_diff_dataset.py --images images --masks masks --out-images d_images --out-masks d_masks`.
-- Launch notebooks after activating the env: `jupyter notebook model_notebooks/<notebook>.ipynb` (device auto-selects MPS/CUDA/CPU).
 
 ## Repository map
 - `model_notebooks/` — training/eval runs (self contained).
