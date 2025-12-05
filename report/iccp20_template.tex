@@ -14,7 +14,8 @@
 \author{Yuanhan Chen% <-this % stops a space
 \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem Y. Chen is with the Department
 of Electrical and Computer Engineering, University of Toronto.\protect\\
-E-mail: yuanhan.chen@mail.utoronto.ca
+E-mail: yuanhan.chen@mail.utoronto.ca\protect\\
+Code: \url{https://github.com/oscarchen178/bolus_seg}
 }% <-this % stops an unwanted space
 }
 
@@ -72,9 +73,9 @@ Given a sequence of grayscale VFSS frames $\{F_1, F_2, \ldots, F_T\}$ where each
 
 \begin{figure*}[!t]
 \centering
-\includegraphics[width=6.5in]{two_stage.png}
+\includegraphics[width=5in]{two_stage.png}
 \vspace{0.1in}
-\includegraphics[width=6.5in]{temporal.png}
+\includegraphics[width=5in]{temporal.png}
 \caption{Overview of our two main approaches. Top: Two-stage reconstruction-fusion pipeline where the clean stage learns to predict frame $F_t$ from $F_{t+1}$ using masked losses, then the fusion stage combines $F_t$ and the clean prediction to segment the bolus. Bottom: Temporal Context Module (TCM) approach that directly processes a sequence of frames with lightweight temporal aggregation at multiple scales.}
 \label{fig:architectures}
 \end{figure*}
